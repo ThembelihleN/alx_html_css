@@ -14,7 +14,23 @@ article{
     overflow-y: auto;
 }
 
+h1, h2, h3{
+    color: rgb(52, 215, 221);
+}
+
+img{
+    display: block;
+    border: 2px rgb(122, 189, 235);
+    border-radius: 10px;
+    width: 100%;
+}
+
+p1, p2 {
+    color: blue;
+}
+
 aside{
     flex: 1;
     overflow-y: auto;
 }
+
