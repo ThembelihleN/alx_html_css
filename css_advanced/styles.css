@@ -11,16 +11,57 @@ body{
 }
 
 .header{
-    background-image: url(CSS\ Advanced/);
+    background-size: cover;
+    padding: 100%;
 }
 
+.links{
+    color: azure;
+    display: block;
+    flex: auto;
+    padding: 10px;
+    justify-items: center;
+}
 
+.button{
+    position: relative;
+    top: 50%;
+    background-color: rgb(248, 66, 218);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px; 
+}
 
+.content{
+    display: inline-block;
+    text-align: left;
+    color: white;
+    padding: 10px;
+}
 
+.heading{
+    font-size: 25px;
+    color: white;
+}
+
+.tutorials{
+    padding: 10px;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.paragraph{
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+  }
 
 .flex-container{
     border: none;
-    display: flex;
+    display: block;
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
@@ -30,8 +71,13 @@ body{
     border: none;
     height: 350px;
     flex-grow: 3;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: baseline;
     flex-direction: column;
+}
+
+.section{
+    box-sizing: content-box;
+    padding: 20px;
 }
