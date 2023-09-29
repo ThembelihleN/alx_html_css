@@ -8,15 +8,23 @@
 <body>
     <form action="2-subscription-form.html">
         <div>
+            <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="Username" required>
         </div>
         <div>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="email@example.com" required>
         </div>
         <div>
-            <input type="radio" name="Subscription" id="weekly">
-            <input type="radio" name="Subscription" id="monthly">
-            <input type="radio" name="Subscription" id="yearly"> 
+            <label for="">Subscription preferences</label>
+            <div>
+                <label for="Subscription">Weekly</label>
+                <input type="radio" name="Subscription" id="weekly">
+                <label for="Subscription">Monthly</label>
+                <input type="radio" name="Subscription" id="monthly">
+                <label for="Subscription">Yearly</label>
+                <input type="radio" name="Subscription" id="yearly"> 
+            </div>
         </div>
     </form>
 </body>

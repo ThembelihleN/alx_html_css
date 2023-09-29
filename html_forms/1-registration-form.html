@@ -6,19 +6,37 @@
     <title>Registration Form</title>
 </head>
 <body>
-    <form action="">
+    <form action="1-registration-form.html">
         <div>
+            <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="Username" required>
         </div>
         <div>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="email@example.com" required>
         </div>
         <div>
+            <label for="password">Password</label>
             <input type="password" name="password" id="password" placeholder="Enter your password" required>
         </div>
         <div>
-            <input type="password" name="password" id="confirm password" placeholder="Confirm your password" required>
+            <label for="password">Confirm password</label>
+            <input type="password" name="cnfrmPassword" id="cnfrmPassword" placeholder="Confirm your password" required>
         </div>
+        <script>
+            function checkPassword(){
+                let password = document.getElementById("password").value;
+                let cnfrmPassword = document.getElementById("cnfrmPassword").value;
+                if (password.length != 0){
+                    if (password == cnfrmPassword){
+                        return true
+                    }
+                    else{
+                        return false
+                    }
+                }
+            }
+        </script>
     </form>
 </body>
 </html>

@@ -8,25 +8,38 @@
 <body>
     <form action="3-feedback-form.html">
         <div>
+            <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="Username" required>
         </div>
         <div>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="email@example.com" required>
         </div>
         <div id="checkboxes">
-            <input type="checkbox" name="Feedback" id="Excellent">
-            <input type="checkbox" name="Feedback" id="Good">
-            <input type="checkbox" name="Feedback" id="Average">
-            <input type="checkbox" name="Feedback" id="Poor">
+            <label for="Feedback">Feedback Options</label>
+            <div>
+                <label for="Feedback">Excellent</label>
+                <input type="checkbox" name="Feedback" id="Excellent">
+                <label for="Feedback">Good</label>
+                <input type="checkbox" name="Feedback" id="Good">
+                <label for="Feedback">Average</label>
+                <input type="checkbox" name="Feedback" id="Average">
+                <label for="Feedback">Poor</label>
+                <input type="checkbox" name="Feedback" id="Poor">
+            </div>
             <script>
-                let checkboxes = document.getElementById("checkboxes")
-                if (checkboxes.ariaChecked == false){
-                    return false
-                }
-            </script>
-        </div>
-        <input type="file" name="file" id="file">
-        <button type="submit">submit</button>
+                function check(){
+                    let checkbox = document.getElementById("checkboxes")
+                    if (checkbox.ariaChecked == false){
+                        return false}
+                    else{
+                        return true
+                        }
+                    }
+                </script>
+            </div>
+        <input type="file" name="file" id="file" required>
+        <button type="submit" onclick="check">submit</button>
     </form>
 </body>
 </html>
